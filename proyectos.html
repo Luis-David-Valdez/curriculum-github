@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyectos - Luis Valdez</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    .marco, .marco1, .marco2 {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .clase_color {
+      color: #007bff;
+    }
+    body {
+      background-image: url('./images/2.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="min-h-screen font-sans">
+
+  <!-- Encabezado -->
+  <img src="images/curriculum.svg" alt="Logo" class="absolute top-4 left-4 w-1/12 object-cover" />
+  <img src="images/unipoli_logo.png" alt="Logo de la Unipoli" class="absolute top-4 right-4 w-1/6 object-contain" />
+
+    <!-- Menú centrado -->
+   <div class="absolute top-10 right-1/4 p-4 border-4 border-gray-500 rounded-lg w-1/2 marco marco1 text-center space-y-4">
+    <a href="index.html" class="clase_color font-semibold ">Currículum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="bibliografia.html" class="clase_color font-semibold ">Biografía&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="proyectos.html" class="clase_color font-semibold ">Proyectos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="https://www.paypal.com/donate/?hosted_button_id=Q4EDLLTE3F5A2" target="_blank" class="clase_color font-semibold">PayPal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  </div>
+
+    <img src="" alt="." class="w-10 h-auto object-contain" />
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="pt-12 pb-20">
+
+    <!-- Proyecto 1 -->
+    <div class="mx-auto mt-10 p-4 border-4 border-gray-500 rounded-lg w-3/4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4 marco2">
+      <div class="w-full md:w-1/2">
+        <h1 class="text-2xl font-bold mb-4">Carro seguidor de línea</h1>
+        <p class="text-base text-justify">
+          El primer proyecto que desarrollamos consistió en la construcción de un carro seguidor de línea. Para su funcionamiento utilizamos dos sensores infrarrojos TCRT5000, los cuales permitieron detectar el contraste entre la línea guía y la superficie. El chasis del vehículo fue fabricado con material acrílico, mientras que las llantas fueron diseñadas e impresas en 3D para optimizar el agarre y la estabilidad del carro en movimiento.<br><br>
+          Como unidad de procesamiento utilizamos una placa ESP32, que funcionó como microcontrolador central para recibir las señales de los sensores y controlar el movimiento del vehículo. El sistema fue alimentado mediante baterías recargables, lo que permitió su operación autónoma.<br><br>
+          Este proyecto nos permitió reforzar conocimientos en electrónica, programación y diseño mecánico, además de fomentar el trabajo en equipo y la resolución de problemas en tiempo real.
+        </p>
+      </div>
+      <div class="w-full md:w-1/2">
+        <video src="images/carro.mp4" width="100%" height="auto" controls class="rounded-md"></video>
+      </div>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="mx-auto mt-10 p-4 border-4 border-gray-500 rounded-lg w-3/4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4 marco2">
+      <div class="w-full md:w-1/2">
+        <img src="images/reloj.jpg" alt="Foto del reloj" class="w-full object-cover rounded-md" />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h1 class="text-2xl font-bold mb-4">Reloj con PIC y contador binario</h1>
+        <p class="text-base text-justify">
+          En este proyecto desarrollé un reloj utilizando un microcontrolador PIC. El sistema estaba programado para contar un minuto de forma precisa, funcionando como un temporizador básico. Además, se incorporó una función adicional: un contador en binario, el cual se controlaba mediante un DIP switch.<br><br>
+          Este componente permitía al usuario seleccionar diferentes combinaciones de bits, las cuales eran interpretadas por el microcontrolador para activar el conteo correspondiente en binario. La implementación de esta función ayudó a comprender de forma práctica el funcionamiento de los sistemas digitales y la lógica binaria.<br><br>
+          Este proyecto fortaleció mis habilidades en programación de microcontroladores, uso de entradas digitales y comprensión del sistema binario, además de mejorar mi capacidad para integrar hardware con software de forma funcional.
+        </p>
+      </div>
+    </div>
+
+    <!-- Proyecto 3 -->
+    <div class="mx-auto mt-10 p-4 border-4 border-gray-500 rounded-lg w-3/4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0 md:space-x-4 marco2 mb-20">
+      <div class="w-full md:w-1/2">
+        <h1 class="text-2xl font-bold mb-4">Instalación de Cámaras de Seguridad con DVR</h1>
+        <p class="text-base text-justify">
+          Este proyecto se realizó durante el periodo de estancias profesionales y consistió en la instalación de un sistema de videovigilancia que incluía cámaras de seguridad y un dispositivo DVR (Digital Video Recorder) para el monitoreo y almacenamiento de video.<br><br>
+          Fue el proyecto final con el que concluimos nuestras estancias, y se llevó a cabo en colaboración con dos compañeros más. Durante su ejecución, aplicamos de manera práctica todos los conocimientos y habilidades adquiridas a lo largo de las capacitaciones previas, tales como instalación física de equipos, configuración de sistemas de videovigilancia y manejo del DVR.<br><br>
+          Este proyecto no solo reforzó nuestras competencias técnicas, sino también el trabajo en equipo, la responsabilidad profesional y la atención al detalle en la ejecución de tareas reales en un entorno laboral.
+        </p>
+      </div>
+      <div class="w-full md:w-1/2">
+        <img src="images/camaras.jpg" alt="Foto del sistema de cámaras" class="w-full object-cover rounded-md" />
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>
